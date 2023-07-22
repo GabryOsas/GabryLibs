@@ -21,7 +21,7 @@ e.isCancelled(); //Useful to see if the event has been cancelled.
 public void onActionBar(PlayerReceivedActionBarEvent e){
 e.getPlayer(); //Useful to set the message when the player join.
 e.getActionBarMessage(); //Useful for taking the message.
-e.setActionBarMessage; //Useful for setting the message.
+e.setActionBarMessage(); //Useful for setting the message.
 }
 ```
 # Explanation ColorAPI
