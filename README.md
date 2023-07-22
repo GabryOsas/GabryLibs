@@ -34,7 +34,7 @@ colorAPI.translateHexColorCodes("&#fb0000G&#fb170aa&#fc2e13b&#fc451dr&#fc5c27y&#
 /**
 Use the method (spamMessage) at your own risk i take no responsibility for how it is used ;P
 **/
-SpamAPI.spamMessage("Hello World!"); //This spams the message console.
+SpamAPI.spamMessage("Hello World!", value, instance of plugin); //This spams the message console.
 ```
 # Explanation GabryAPI
 ```java
