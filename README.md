@@ -13,7 +13,7 @@ e.getPlayer(); //Useful to set the message when the player enters.
 ```java
 public void onShield(PlayerShieldEvent e){
 e.getPlayer(); //Useful to set the message when the player join.
-e.setCancelled(); //Useful for canceling the event.
+e.setCancelled(true/false); //Useful for canceling the event.
 e.isCancelled(); //Useful to see if the event has been cancelled.
 }
 ```
@@ -21,7 +21,7 @@ e.isCancelled(); //Useful to see if the event has been cancelled.
 public void onActionBar(PlayerReceivedActionBarEvent e){
 e.getPlayer(); //Useful to set the message when the player join.
 e.getActionBarMessage(); //Useful for taking the message.
-e.setActionBarMessage(); //Useful for setting the message.
+e.setActionBarMessage("Hello!"); //Useful for setting the message.
 }
 ```
 # Explanation ColorAPI
