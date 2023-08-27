@@ -5,6 +5,8 @@ import ch.njol.skript.lang.util.SimpleEvent;
 import ch.njol.skript.registrations.EventValues;
 import ch.njol.skript.util.Getter;
 import me.gabryosas.gabrylibs.api.events.PlayerShieldEvent;
+import me.legofreak107.vehiclesplus.gui.vehicles.VehicleGUI;
+import me.legofreak107.vehiclesplus.gui.vehicles.VehicleGarageGUI;
 import me.legofreak107.vehiclesplus.vehicles.api.events.VehicleEnterEvent;
 import me.legofreak107.vehiclesplus.vehicles.api.events.VehicleLeaveEvent;
 import me.legofreak107.vehiclesplus.vehicles.vehicles.objects.SpawnedVehicle;
@@ -25,11 +27,18 @@ public class CustomSimpleEvents {
                 return (SpawnedVehicle) e.getVehicle();
             }
         }, 0);
-        Skript.registerEvent("Player left Vehicle Plus", SimpleEvent.class, VehicleLeaveEvent.class, "[player] left vehicle plus");
+        Skript.registerEvent("Player Left Vehicle Plus", SimpleEvent.class, VehicleLeaveEvent.class, "[player] left vehicle plus");
         EventValues.registerEventValue(VehicleLeaveEvent.class, Player.class, new Getter<Player, VehicleLeaveEvent>() {
             @Override
             public Player get(VehicleLeaveEvent e) {
                 return e.getDriver();
+            }
+        }, 0);
+        Skript.registerEvent("Player Shield", SimpleEvent.class, PlayerShieldEvent.class, "[player] player shield");
+        EventValues.registerEventValue(PlayerShieldEvent.class, Player.class, new Getter<Player, PlayerShieldEvent>() {
+            @Override
+            public Player get(PlayerShieldEvent e) {
+                return e.getPlayer();
             }
         }, 0);
     }
