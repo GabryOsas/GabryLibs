@@ -2,4 +2,5 @@ name: GabryLibs
 version: '${project.version}'
 main: me.gabryosas.gabrylibs.GabryLibs
 api-version: '1.16'
-commands:
+softdepend:
+  - Skript

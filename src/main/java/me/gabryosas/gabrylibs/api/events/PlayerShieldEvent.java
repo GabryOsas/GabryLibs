@@ -1,5 +1,6 @@
 package me.gabryosas.gabrylibs.api.events;
 
+import ch.njol.skript.lang.util.SimpleEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

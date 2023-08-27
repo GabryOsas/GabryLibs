@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 
 public class GabryAPI {
 
-    public void c(Player player, GameModeType gamemodeType) {
+    public void changeGamemode(Player player, GameModeType gamemodeType) {
         GameMode gamemode = null;
 
         switch (gamemodeType) {
