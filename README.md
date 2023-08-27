@@ -48,19 +48,17 @@ Use the method (crashPlayerAndServer); at your own risk i take no responsibility
 gabryAPI.crashPlayerAndServer(player); //This can come in handy for crashing a player's minecraft. ATTENTION the server can crash and above all I don't assume any responsibility regarding its use.
 ```
 # Explanation Head Database API
-```skript
-command /gui:
-  trigger:
-    open chest inventory with 3 rows named "&fExample GUI" to player
-    wait 1 tick
-    set slot 0 of player's current inventory to new skull named "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTc4NWQ1MmIyMzlkYmVhNWI2MTk1YmFkMmI2MmM3YzE3MTE0N2MyODM1YjI5NDk0MWIyODY4YWUzNzM1Mjc5NiJ9fX0=" of player named "&7HDB" with lore "&7Custom Head!"
+```yaml
+new skull named "<value>" of player #This expression can be used to fetch heads from the head database site,.
 
-on inventory click:
-    if name of event-inventory is "&fExample GUI":
-        cancel event
+open garage to player #We can use this effect to open the default garage GUI to the player.
 
-on player enter vehicle plus:
+on player enter vehicle plus: #This event is triggered when entering the vehicle. you can cancel the event.
 	broadcast "Hello!"
-on player left vehicle plus:
+
+on player left vehicle plus: #This event is triggered when you exit your vehicle. you can cancel the event.
 	broadcast "Bye!"
+
+on player shield:
+	send "Hello!" to player #This event is triggered when the player uses his shield.
 ```
