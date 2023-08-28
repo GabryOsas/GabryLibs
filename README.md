@@ -1,5 +1,5 @@
 # GabryLibs
-This file can be used as a library for the plugin or as add-ons in scripts.
+This file can be used as a library for the plugin (Java) or as add-ons in skript.
 # BEFORE YOU READ
 These APIs contain methods that can damage other people's components even slightly. Consequently, I do not assume any responsibility for the damage they may experience or their use. I'm not sure about this but when in doubt I write it.
 # Explanation Events
