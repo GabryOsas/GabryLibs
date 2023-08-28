@@ -47,7 +47,7 @@ Use the method (crashPlayerAndServer); at your own risk i take no responsibility
 **/
 gabryAPI.crashPlayerAndServer(player); //This can come in handy for crashing a player's minecraft. ATTENTION the server can crash and above all I don't assume any responsibility regarding its use.
 ```
-# Explanation Head Database API
+# Explanation Skript Addons
 ```yaml
 new skull named "<value>" of player #This expression can be used to fetch heads from the head database site,.
 
