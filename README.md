@@ -53,6 +53,8 @@ new skull named "<value>" of player #This expression can be used to fetch heads 
 
 open garage to player #We can use this effect to open the default garage GUI to the player.
 
+if block is activate: #We can use this condition to check if the lock (door) is open or closed.
+
 on player enter vehicle plus: #This event is triggered when entering the vehicle. you can cancel the event.
 	broadcast "Hello!"
 
